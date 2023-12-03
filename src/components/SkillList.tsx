@@ -5,7 +5,7 @@ import useSWR from "swr";
 
 const SkillList = () => {
   const { data, error, isLoading } = useSWR(
-    `${process.env.API_URL}/skills`,
+    `${process.env.API_URL}/skills?take=all`,
     fetcher
   );
 
